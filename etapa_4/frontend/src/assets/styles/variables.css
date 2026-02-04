@@ -1,0 +1,12 @@
+:root {
+  --primary: #2c3e50;
+  --primary-hover: #34495e;
+
+  --bg-card: #ffffff;
+  --border-color: #ddd;
+
+  --text-muted: gray;
+  --danger: red;
+
+  --radius: 8px;
+}

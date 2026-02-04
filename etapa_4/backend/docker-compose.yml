@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: etapa3_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: teste_db
+      POSTGRES_USER: teste_user
+      POSTGRES_PASSWORD: teste_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/data

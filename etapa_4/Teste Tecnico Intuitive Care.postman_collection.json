@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "1152aab9-692b-4092-a86d-4f3c67f6336e",
+		"name": "Teste Tecnico Intuitive Care",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49588218"
+	},
+	"item": [
+		{
+			"name": "Operadoras",
+			"item": [
+				{
+					"name": "Todas Operadoras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/operadoras",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"operadoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNPJ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/operadoras/{{cnpj}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"operadoras",
+								"{{cnpj}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Despesas por CNPJ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/operadoras/{{cnpj}}/despesas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"operadoras",
+								"{{cnpj}}",
+								"despesas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estatisticas",
+			"item": [
+				{
+					"name": "Top 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/estatisticas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"estatisticas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Despesas por UF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/estatisticas/despesas-por-uf",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"estatisticas",
+								"despesas-por-uf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

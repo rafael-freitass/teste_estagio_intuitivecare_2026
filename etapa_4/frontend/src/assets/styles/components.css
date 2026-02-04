@@ -1,0 +1,50 @@
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-top: 15px;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.table th {
+  background: var(--primary);
+  color: white;
+}
+
+.table-row-hover:hover {
+  background: #f0f0f0;
+}
+
+.paginacao {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.erro {
+  color: var(--danger);
+}
+
+.descricao {
+  color: var(--text-muted);
+}
+
+.voltar {
+  margin-bottom: 10px;
+}
